@@ -20,12 +20,7 @@
  $(document).ready(function() {
 
 
-   console.log(lines1);
-
-   document.getElementById("div").innerHTML = lines1[rnd1] +  lines2[rnd2] + lines3[rnd3];
-
-   var rnd4 = Math.ceil(Math.random() * 11) + 1 ;
-   document.body.className='site'+rnd4;
+   document.querySelector("div").innerHTML = lines1[rnd1] +  lines2[rnd2] + lines3[rnd3];
 
 
  });
