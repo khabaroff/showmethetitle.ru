@@ -5,7 +5,7 @@
   $(document).ready(function() {
     documentReady.resolve();
 
-    document.querySelector("button").addEventListener('click', function (e) {
+    document.querySelector(".refresh").addEventListener('click', function (e) {
 
       allObj.done(function (lines1, lines2, lines3) {
         var rnd1 = getRnd(lines1);
@@ -13,7 +13,7 @@
         var rnd2 = getRnd(lines2);
 
 
-        document.querySelector("div").innerHTML = lines1[rnd1] +
+        document.querySelector("#txt").innerHTML = lines1[rnd1] +
         lines2[rnd2] + lines3[rnd3];
 
         var rnd4 = Math.ceil(Math.random() * 11) + 1;
@@ -49,7 +49,7 @@
     var rnd2 = getRnd(lines2);
 
 
-    document.querySelector("div").innerHTML = lines1[rnd1] + lines2[rnd2] + lines3[rnd3];
+    document.querySelector("#txt").innerHTML = lines1[rnd1] + lines2[rnd2] + lines3[rnd3];
 
     var rnd4 = Math.ceil(Math.random() * 11) + 1;
     document.body.className = 'site' + rnd4;
