@@ -11,10 +11,30 @@ body {
   top: 25px;
   width: 60px;
   height: 60px;
+    transition: 0.2s;
+    border: 1px solid grey;
+    /*border-radius: 50%;*/
+    font-size: 0;
+    line-height: 0;
 }
 
+.refresh:hover {
+    transform-origin: 50% 50%;
+    -moz-transform: rotate(360deg); /* Для Firefox */
+    -ms-transform: rotate(360deg); /* Для IE */
+    -webkit-transform: rotate(360deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(360deg); /* Для Opera */
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+
 #refresh { transition: 0.2s; }
-svg:hover #refresh { fill: #3f51b5; }
+
+svg:hover #refresh {
+    fill: #3f51b5;
+
+}
 
 .site1 {
   background-color: #5a68b8;
