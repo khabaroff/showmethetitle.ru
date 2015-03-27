@@ -11,6 +11,7 @@
                 document.querySelector("#txt").innerHTML = lines1[rnd1] + ' ' + lines2[rnd2] + ', ' + lines3[rnd3];
                 var rnd4 = Math.ceil(Math.random() * 8) + 1;
                 document.body.className = 'site' + rnd4;
+
             });
         }, true);
     });
@@ -23,9 +24,7 @@
         var lines1 = a1[0].split(/\r?\n/);
         var lines2 = a2[0].split(/\r?\n/);
         var lines3 = a3[0].split(/\r?\n/);
-        console.log(lines1);
-        console.log(lines2);
-        console.log(lines3);
+
         allObj.resolve(lines1, lines2, lines3);
         var rnd1 = getRnd(lines1);
         var rnd3 = getRnd(lines3);
@@ -41,4 +40,5 @@
     function getRnd(obj) {
         return Math.floor(obj.length * Math.random());
     }
+
 })(jQuery);
