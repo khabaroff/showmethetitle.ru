@@ -3,6 +3,9 @@
     allObj = $.Deferred();
     $(document).ready(function () {
         documentReady.resolve();
+        var angle = 360;
+        var refreshtimes = 0;
+
         document.querySelector(".refresh").addEventListener('click', function () {
             allObj.done(function (lines1, lines2, lines3) {
                 var rnd1 = getRnd(lines1);
@@ -11,6 +14,25 @@
                 document.querySelector("#txt").innerHTML = lines1[rnd1] + ' ' + lines2[rnd2] + ', ' + lines3[rnd3];
                 var rnd4 = Math.ceil(Math.random() * 8) + 1;
                 document.body.className = 'site' + rnd4;
+
+
+                $(".refresh").css({
+                    '-webkit-transform': 'rotate(' + angle + 'deg)',
+                    '-moz-transform': 'rotate(' + angle + 'deg)',
+                    '-o-transform': 'rotate(' + angle + 'deg)',
+                    '-ms-transform': 'rotate(' + angle + 'deg)'
+                });
+
+                refreshtimes += 1;
+                console.log(refreshtimes);
+                console.log(angle);
+
+                ga('send', 'event', 'button', 'click', 'refresh', refreshtimes);
+
+                angle += 360;
+
+
+
 
             });
         }, true);
@@ -42,3 +64,5 @@
     }
 
 })(jQuery);
+
+

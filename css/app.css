@@ -11,19 +11,19 @@ body {
     position: absolute;
     right: 40px;
     top: 25px;
-    width: 62px;
+    width: 61px;
     height: 75px;
 
     /*border-radius: 50%;*/
     font-size: 0;
     line-height: 0;
 
-    -webkit-transition: all .1s ease-out;
-    -moz-transition: all .1s ease-out;
-    -o-transition: all .1s ease-out;
-    transition: all .1s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
 
-    transform-origin: 50% 55%
+    transform-origin: 50% 60%
 }
 
 .refresh:hover {
@@ -32,11 +32,11 @@ body {
 
 #svg {
     transition: 0.1s;
-    fill: #000000;
+    fill: #ff0000;
 }
 
 .refresh:hover #svg {
-    fill: #3f51b5;
+    fill: #000000;
 
 }
 
