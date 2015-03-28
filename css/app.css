@@ -1,11 +1,25 @@
 body {
+
+    width: 100%;
+    height: 100%;
     background-color: #edebe2;
     font-family: 'Vremena', sans-serif;
     font-size: 100px;
     line-height: 116px;
     letter-spacing: 1px;
-    padding: 57px 190px 100px 45px;
+
 }
+
+#content {
+    margin: 57px 140px 100px 45px;
+}
+
+#txt {
+    margin: 0;
+    padding: 0;
+
+}
+
 
 .refresh {
     position: absolute;
@@ -14,7 +28,7 @@ body {
     width: 61px;
     height: 75px;
 
-    /*border-radius: 50%;*/
+
     font-size: 0;
     line-height: 0;
 
@@ -23,25 +37,36 @@ body {
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out;
 
-    transform-origin: 50% 60%
+    transform-origin: 50% 60%;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .refresh:hover {
     cursor: pointer;
 }
 
-.refresh:hover > svg > path#svg {
-    fill: #000000;
-}
-
 #svg {
     transition: 0.1s;
-    fill: #ffffff;
+    fill: none;
 }
+
 
 .site1 {
     background-color: #5a68b8;
     color: white;
+}
+
+.site1 .refresh:hover > svg > path#svg {
+    fill: black
+}
+
+.site1 .refresh > svg > path#svg {
+    fill: white
 }
 
 .site2 {
@@ -49,9 +74,25 @@ body {
     color: white;
 }
 
+.site2 .refresh:hover > svg > path#svg {
+    fill: black
+}
+
+.site2 .refresh > svg > path#svg {
+    fill: white
+}
+
 .site3 {
     background-color: #1e3fbe;
     color: white;
+}
+
+.site3 .refresh:hover > svg > path#svg {
+    fill: black
+}
+
+.site3 .refresh > svg > path#svg {
+    fill: white
 }
 
 .site4 {
@@ -59,9 +100,25 @@ body {
     color: white;
 }
 
+.site4 .refresh:hover > svg > path#svg {
+    fill: black
+}
+
+.site4 .refresh > svg > path#svg {
+    fill: white
+}
+
 .site5 {
     background-color: #ffffff;
     color: #2222cc;
+}
+
+.site5 .refresh:hover > svg > path#svg {
+    fill: black
+}
+
+.site5 .refresh > svg > path#svg {
+    fill: #2222cc
 }
 
 .site6 {
@@ -69,9 +126,25 @@ body {
     color: white;
 }
 
+.site6 .refresh:hover > svg > path#svg {
+    fill: black
+}
+
+.site6 .refresh > svg > path#svg {
+    fill: white
+}
+
 .site7 {
     background-color: #ebe9da;
     color: #141414;
+}
+
+.site7 .refresh:hover > svg > path#svg {
+    fill: white
+}
+
+.site7 .refresh > svg > path#svg {
+    fill: #141414
 }
 
 .site8 {
@@ -79,12 +152,24 @@ body {
     color: white;
 }
 
+.site8 .refresh:hover > svg > path#svg {
+    fill: black
+}
+
+.site8 .refresh > svg > path#svg {
+    fill: white
+}
+
 .site9 {
     background-color: #c9471a;
     color: white;
 }
 
-#txt {
-    width: 100%;
-    height: 100%;
+.site9 .refresh:hover > svg > path#svg {
+    fill: black
 }
+
+.site9 .refresh > svg > path#svg {
+    fill: white
+}
+
