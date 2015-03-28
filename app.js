@@ -5,6 +5,7 @@
         documentReady.resolve();
         var angle = 360;
         var refreshtimes = 0;
+        var bodycolor = '';
 
         document.querySelector(".refresh").addEventListener('click', function () {
             allObj.done(function (lines1, lines2, lines3) {
@@ -23,13 +24,22 @@
                     '-ms-transform': 'rotate(' + angle + 'deg)'
                 });
 
+                arrowcolor = $("body").css("color");
+
+                $('.refresh').hover(function () {
+                        $('#svg').css('fill', 'red');
+                    },
+                    function () {
+                        $('#svg').css('fill', arrowcolor);
+                    });
+
+
                 refreshtimes += 1;
-                console.log(refreshtimes);
-                console.log(angle);
+                angle += 360;
 
                 ga('send', 'event', 'button', 'click', 'refresh', refreshtimes);
 
-                angle += 360;
+
 
 
 
@@ -54,6 +64,18 @@
         document.querySelector("#txt").innerHTML = lines1[rnd1] + ' ' + lines2[rnd2] + ', ' + lines3[rnd3];
         var rnd4 = Math.ceil(Math.random() * 8) + 1;
         document.body.className = 'site' + rnd4;
+
+        arrowcolor = $("body").css("color");
+
+        $('.refresh').hover(function () {
+                $('#svg').css('fill', 'red');
+            },
+            function () {
+                $('#svg').css('fill', arrowcolor);
+            });
+
+
+
     });
     function getDoc(url) {
         return $.ajax({url: url});

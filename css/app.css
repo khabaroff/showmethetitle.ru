@@ -30,14 +30,13 @@ body {
     cursor: pointer;
 }
 
-#svg {
-    transition: 0.1s;
-    fill: #ff0000;
+.refresh:hover > svg > path#svg {
+    fill: #000000;
 }
 
-.refresh:hover #svg {
-    fill: #000000;
-
+#svg {
+    transition: 0.1s;
+    fill: #ffffff;
 }
 
 .site1 {
