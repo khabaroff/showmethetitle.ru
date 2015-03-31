@@ -206,3 +206,12 @@ body {
     fill: white
 }
 
+@media (max-width: 650px) {
+    .footer {
+        display: none;
+    }
+
+    #content {
+        padding: 57px 140px 100px 20px;
+    }
+}
