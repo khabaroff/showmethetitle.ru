@@ -7,7 +7,7 @@ body {
     font-size: 100px;
     line-height: 116px;
     letter-spacing: 1px;
-
+    position: relative;
 }
 
 #content {
@@ -53,6 +53,34 @@ body {
 #svg {
     transition: 0.1s;
     fill: none;
+}
+
+.footer {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    white-space: nowrap;
+    width: 500px;
+    height: 136px;
+}
+
+.fb-share-button {
+    display: inline-block;
+    bottom: -19px !important;
+    right: -78px !important;
+}
+
+#vk_like {
+    bottom: 70px !important;
+    right: -230px !important;
+}
+
+.twitter-share-button {
+
+    position: relative;
+    bottom: 93px !important;
+    right: -400px !important;
+
 }
 
 .site1 {
