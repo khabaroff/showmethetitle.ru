@@ -7,17 +7,17 @@ body {
     font-size: 100px;
     line-height: 116px;
     letter-spacing: 1px;
-
+    position: relative;
 }
 
 #content {
-    margin: 57px 140px 100px 45px;
+    padding: 57px 140px 100px 45px;
 }
 
 #txt {
     margin: 0;
     padding: 0;
-
+    overflow: none;
 }
 
 
@@ -55,6 +55,39 @@ body {
     fill: none;
 }
 
+.footer {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    white-space: nowrap;
+    width: 440px;
+    height: 22px;
+    font-size: 14px;
+    line-height: 1em;
+    /*border: 1px solid red;*/
+}
+
+.fb-share-button {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+}
+
+#vk_like {
+    display: inline-block;
+    /*margin-right: 10px;*/
+}
+
+#vk_like iframe {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.twitter-share-button {
+    display: inline-block;
+    /*margin-right: 10px;*/
+    vertical-align: top;
+}
 
 .site1 {
     background-color: #5a68b8;
