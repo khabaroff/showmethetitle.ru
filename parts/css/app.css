@@ -1,0 +1,330 @@
+body {
+
+    width: 100%;
+    height: 100%;
+    background-color: #edebe2;
+    font-family: 'Vremena', sans-serif;
+    font-size: 100px;
+    line-height: 116px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+#content {
+    padding: 57px 140px 100px 45px;
+}
+
+#txt {
+    margin: 0;
+    padding: 0;
+}
+
+
+.refresh {
+    position: absolute;
+    right: 40px;
+    top: 25px;
+    width: 61px;
+    height: 75px;
+
+
+    font-size: 0;
+    line-height: 0;
+
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+
+    transform-origin: 50% 60%;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.refresh:hover {
+    cursor: pointer;
+}
+
+#svg {
+    transition: 0.1s;
+    fill: none;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    white-space: nowrap;
+    width: 472px;
+    height: 22px;
+    font-size: 14px;
+    line-height: 1em;
+    /*border: 1px solid red;*/
+}
+
+.mobilefooter  {display: none;}
+.mobile .footer {display: none;}
+
+
+.mobile .mobilefooter {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    /*background: green;*/
+    width: 100%;
+    height: 92px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.shareicon {
+    width: 16%;
+    fill: #FFF;
+    margin-left: 7%;
+    float: left;
+}
+
+
+
+.fb-share-button {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+}
+
+#vk_like {
+    display: inline-block;
+    /*margin-right: 10px;*/
+}
+
+#vk_like iframe {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.twitter-share-button {
+    display: inline-block;
+    /*margin-right: 10px;*/
+    vertical-align: top;
+}
+
+.site1 {
+    background-color: #5a68b8;
+    color: white;
+}
+
+.site1 .refresh:hover > svg > path#svg {
+    fill: black
+}
+
+.site1 .refresh > svg > path#svg, .site1 .shareicon a {
+    fill: white
+}
+
+.site1 .shareicon a:active {fill: black}
+
+.site2 {
+    background-color: #00889a;
+    color: white;
+}
+
+.site2 .refresh:hover > svg > path#svg {
+    fill: black
+}
+
+.site2 .refresh > svg > path#svg, .site2 .shareicon a  {
+    fill: white
+}
+
+
+
+.site2 .shareicon a:active {fill: black}
+
+.site3 {
+    background-color: #1e3fbe;
+    color: white;
+}
+
+.site3 .refresh:hover > svg > path#svg {
+    fill: black
+}
+
+.site3 .refresh > svg > path#svg, .site3 .shareicon a  {
+    fill: white
+}
+
+.site3 .shareicon a:active {fill: black}
+
+.site4 {
+    background-color: #d01e1c;
+    color: white;
+}
+
+.site4 .refresh:hover > svg > path#svg {
+    fill: black
+}
+
+.site4 .refresh > svg > path#svg, .site4 .shareicon a  {
+    fill: white
+}
+
+.site4 .shareicon a:active {fill: black}
+
+
+
+.site5 {
+    background-color: #ffffff;
+    color: #2222cc;
+}
+
+.site5 .refresh:hover > svg > path#svg {
+    fill: black
+}
+
+.site5 .refresh > svg > path#svg, .site5 .shareicon a {
+    fill: #2222cc
+}
+
+.site5 .shareicon a:active {fill: #dddd33}
+
+.site6 {
+    background-color: #2785fc;
+    color: white;
+}
+
+.site6 .refresh:hover > svg > path#svg {
+    fill: black
+}
+
+.site6 .refresh > svg > path#svg, .site6 .shareicon a {
+    fill: white
+}
+
+.site6 .shareicon a:active {fill: black}
+
+.site7 {
+    background-color: #ebe9da;
+    color: #141414;
+}
+
+.site7 .refresh:hover > svg > path#svg {
+    fill: white
+}
+
+.site7 .refresh > svg > path#svg, .site7 .shareicon a {
+    fill: #141414
+}
+
+.site7 .shareicon a:active {fill: #aaa}
+
+.site8 {
+    background-color: #dfab4d;
+    color: white;
+}
+
+.site8 .refresh:hover > svg > path#svg {
+    fill: black
+}
+
+.site8 .refresh > svg > path#svg, .site8 .shareicon a  {
+    fill: white
+}
+
+.site8 .shareicon a:active {fill: black}
+
+.site9 {
+    background-color: #c9471a;
+    color: white;
+}
+
+.site9 .refresh:hover > svg > path#svg {
+    fill: black
+}
+
+.site9 .refresh > svg > path#svg, .site9 .shareicon a  {
+    fill: white
+}
+
+.site9 .shareicon a:active {fill: black}
+
+.mobile  .footer {
+        display: none;
+    }
+
+.mobile .footermobile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 90%;
+    height: 92px;
+    padding: 0;
+    border: 1px solid red;
+}
+
+
+.mobile  #content {
+        padding: 15px 60px 135px 20px;
+    position: absolute;
+    }
+
+ .mobile .refresh {
+        position: absolute;
+        right: 20px;
+        top: 18px;
+        width: 30px;
+        height: 37px;
+
+
+    }
+
+.mobile .site1 .refresh:hover > svg > path#svg {
+    fill: white
+}
+
+.mobile .site2 .refresh:hover > svg > path#svg {
+    fill: white
+}
+
+
+.mobile .site3 .refresh:hover > svg > path#svg {
+    fill: white
+}
+
+
+.mobile .site4 .refresh:hover > svg > path#svg {
+    fill: white
+}
+
+
+.mobile .site5 .refresh:hover > svg > path#svg {
+    fill: #2222cc
+}
+
+
+.mobile .site6 .refresh:hover > svg > path#svg {
+    fill: white
+}
+
+
+.mobile .site7 .refresh:hover > svg > path#svg {
+    fill: #141414
+}
+
+
+.mobile .site8 .refresh:hover > svg > path#svg {
+    fill: white
+}
+
+.mobile .site9 .refresh:hover > svg > path#svg {
+    fill: white
+}
+
+
