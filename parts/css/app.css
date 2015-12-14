@@ -67,11 +67,8 @@ body {
     /*border: 1px solid red;*/
 }
 
-.mobilefooter  {display: none;}
-.mobile .footer {display: none;}
 
-
-.mobile .mobilefooter {
+  .mobilefooter {
     display: block;
     position: fixed;
     bottom: 0;
@@ -253,11 +250,8 @@ body {
 
 .site9 .shareicon a:active {fill: black}
 
-.mobile  .footer {
-        display: none;
-    }
 
-.mobile .footermobile {
+.footermobile {
     position: absolute;
     bottom: 0;
     left: 0;

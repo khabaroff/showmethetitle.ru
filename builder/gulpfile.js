@@ -4,7 +4,6 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     rigger = require('gulp-rigger'),
     minifycss = require('gulp-minify-css'),
-    sourcemaps = require('gulp-sourcemaps'),
     uglify = require('gulp-uglify'),
     htmlmin = require('gulp-htmlmin')
 ;
