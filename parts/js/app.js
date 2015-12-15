@@ -145,10 +145,6 @@ var again = 0;
 
 
 
-
-
-
-
     }
 
 })(jQuery);

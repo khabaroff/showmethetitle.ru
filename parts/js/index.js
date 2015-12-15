@@ -7,5 +7,4 @@
 
 //= app.js
 
-//= social.js
 

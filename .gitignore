@@ -1,2 +1,2 @@
-/builder/node_modules
+/builder/node_modules/*
 /.idea

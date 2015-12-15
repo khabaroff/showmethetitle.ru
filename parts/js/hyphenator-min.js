@@ -24,10 +24,24 @@ if (isMobile) {
     document.documentElement.setAttribute('class', 'mobile');
     //console.log("mobile");
 
+    console.log("mob");
+
+    $.get( "/parts/html/mobilefooter.html", function( data ) {
+        $( "#foot" ).html( data );
+    });
+
+
+
 } else {
     Hyphenator.config({minwordlength:99});
+
+    console.log("nomob");
+
+    $.get( "/parts/html/footer.html", function( data ) {
+        $( "#foot" ).html( data );
+    });
+
+
 }
-
-
 
 
