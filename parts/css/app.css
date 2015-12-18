@@ -54,8 +54,6 @@ body {
     fill: none;
 }
 
-
-
 .footer {
     position: fixed;
     bottom: 40px;
@@ -74,19 +72,25 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 92px;
+    /*height: 92px;*/
     padding: 0;
     margin-bottom: 20px;
+    font-size: 0;
+    line-height: 0;
 }
 
-
-.shareicon {
-    width: 90px;
-    height: 90px;
-    fill: #FFF;
-    margin-left: 7%;
+.mobile #foot a
+{  width: 16%;
+    display: inline-block;
+    margin-left: 8%;
     float: left;
 }
+
+.mobile #foot a:first-child
+{
+    margin-left: 6%;
+}
+
 
 
 .fb-share-button {
@@ -111,6 +115,8 @@ body {
     vertical-align: top;
 }
 
+/*=====================================*/
+
 .site1 {
     background-color: #5a68b8;
     color: white;
@@ -120,11 +126,11 @@ body {
     fill: black
 }
 
-.site1 .refresh > svg > path#svg, .site1 .shareicon a {
+.site1 .refresh > svg > path#svg, .site1 a {
     fill: white
 }
 
-.site1 .shareicon a:active {fill: black}
+.site1 a:active {fill: black}
 
 .site2 {
     background-color: #00889a;
@@ -135,13 +141,13 @@ body {
     fill: black
 }
 
-.site2 .refresh > svg > path#svg, .site2 .shareicon a  {
+.site2 .refresh > svg > path#svg, .site2 a  {
     fill: white
 }
 
 
 
-.site2 .shareicon a:active {fill: black}
+.site2 a:active {fill: black}
 
 .site3 {
     background-color: #1e3fbe;
@@ -152,11 +158,11 @@ body {
     fill: black
 }
 
-.site3 .refresh > svg > path#svg, .site3 .shareicon a  {
+.site3 .refresh > svg > path#svg, .site3 a  {
     fill: white
 }
 
-.site3 .shareicon a:active {fill: black}
+.site3 a:active {fill: black}
 
 .site4 {
     background-color: #d01e1c;
@@ -167,11 +173,11 @@ body {
     fill: black
 }
 
-.site4 .refresh > svg > path#svg, .site4 .shareicon a  {
+.site4 .refresh > svg > path#svg, .site4 a  {
     fill: white
 }
 
-.site4 .shareicon a:active {fill: black}
+.site4 a:active {fill: black}
 
 
 
@@ -184,11 +190,11 @@ body {
     fill: black
 }
 
-.site5 .refresh > svg > path#svg, .site5 .shareicon a {
+.site5 .refresh > svg > path#svg, .site5 a {
     fill: #2222cc
 }
 
-.site5 .shareicon a:active {fill: #dddd33}
+.site5 a:active {fill: #dddd33}
 
 .site6 {
     background-color: #2785fc;
@@ -199,11 +205,11 @@ body {
     fill: black
 }
 
-.site6 .refresh > svg > path#svg, .site6 .shareicon a {
+.site6 .refresh > svg > path#svg, .site6 a {
     fill: white
 }
 
-.site6 .shareicon a:active {fill: black}
+.site6 a:active {fill: black}
 
 .site7 {
     background-color: #ebe9da;
@@ -214,11 +220,11 @@ body {
     fill: white
 }
 
-.site7 .refresh > svg > path#svg, .site7 .shareicon a {
+.site7 .refresh > svg > path#svg, .site7 a {
     fill: #141414
 }
 
-.site7 .shareicon a:active {fill: #aaa}
+.site7 a:active {fill: #aaa}
 
 .site8 {
     background-color: #dfab4d;
@@ -229,11 +235,11 @@ body {
     fill: black
 }
 
-.site8 .refresh > svg > path#svg, .site8 .shareicon a  {
+.site8 .refresh > svg > path#svg, .site8 a  {
     fill: white
 }
 
-.site8 .shareicon a:active {fill: black}
+.site8 a:active {fill: black}
 
 .site9 {
     background-color: #c9471a;
@@ -244,11 +250,11 @@ body {
     fill: black
 }
 
-.site9 .refresh > svg > path#svg, .site9 .shareicon a  {
+.site9 .refresh > svg > path#svg, .site9 a  {
     fill: white
 }
 
-.site9 .shareicon a:active {fill: black}
+.site9 a:active {fill: black}
 
 
 .mobile  #content {
