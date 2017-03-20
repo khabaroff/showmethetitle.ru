@@ -1,0 +1,142 @@
+{
+  "name": "khabaroff/showmethetitle.ru",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Default",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BannerHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "-apple-system, BlinkMacSystemFont, sans-serif",
+    "fontWeight": 400,
+    "bold": 600,
+    "lineHeight": 1.5,
+    "typeScale": [
+      72,
+      48,
+      24,
+      20,
+      16,
+      14,
+      12
+    ],
+    "monospace": "Menlo, monospace",
+    "heading": {
+      "fontFamily": null,
+      "fontStyle": null,
+      "fontWeight": 600,
+      "lineHeight": 1.25,
+      "textTransform": null,
+      "letterSpacing": null
+    },
+    "h0": {},
+    "h1": {},
+    "h2": {},
+    "h3": {},
+    "h4": {},
+    "h5": {},
+    "h6": {},
+    "alternativeText": {},
+    "space": [
+      0,
+      8,
+      16,
+      32,
+      48,
+      64,
+      96
+    ],
+    "layout": {
+      "maxWidth": 1024,
+      "centered": false
+    },
+    "colors": {
+      "text": "#111",
+      "background": "#fff",
+      "primary": "#08e",
+      "secondary": "#059",
+      "highlight": "#e08",
+      "border": "#ddd",
+      "muted": "#eee"
+    },
+    "border": {
+      "width": 1,
+      "radius": 2
+    },
+    "link": {},
+    "button": {
+      "hover": {
+        "boxShadow": "inset 0 0 0 999px rgba(0, 0, 0, .125)"
+      }
+    },
+    "input": {},
+    "body": {
+      "margin": 0
+    },
+    "breakpoints": {
+      "xs": "@media screen and (max-width:40em)",
+      "sm": "@media screen and (min-width:40em)",
+      "md": "@media screen and (min-width:52em)",
+      "lg": "@media screen and (min-width:64em)"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "http://showmethetitle.ru/",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/khabaroff/showmethetitle.ru",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "showmethetitle.ru",
+      "subhead": "Генератор заголовков",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "showmethetitle.ru: Генератор заголовков",
+          "url": "http://showmethetitle.ru/"
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "khabaroff",
+          "repo": "showmethetitle.ru"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1>&#x413;&#x435;&#x43D;&#x435;&#x440;&#x430;&#x442;&#x43E;&#x440; &#x437;&#x430;&#x433;&#x43E;&#x43B;&#x43E;&#x432;&#x43A;&#x43E;&#x432;</h1>\n<p>&#x418;&#x434;&#x435;&#x44F; &#x438; &#x434;&#x438;&#x437;&#x430;&#x439;&#x43D;: &#x412;&#x430;&#x441;&#x438;&#x43B;&#x438;&#x439; &#x41F;&#x43E;&#x434;&#x442;&#x44B;&#x43D;&#x43D;&#x438;&#x43A;&#x43E;&#x432;</p>\n<p>&#x412;&#x435;&#x440;&#x441;&#x442;&#x43A;&#x430; &#x438; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x43C;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x435;: &#x421;&#x435;&#x440;&#x433;&#x435;&#x439; &#x425;&#x430;&#x431;&#x430;&#x440;&#x43E;&#x432;</p>\n<p>&#x421;&#x443;&#x43F;&#x435;&#x440;&#x432;&#x430;&#x439;&#x437;&#x438;&#x43D;&#x433;: &#x410;&#x43B;&#x435;&#x43A;&#x441;&#x430;&#x43D;&#x434;&#x440; &#x411;&#x430;&#x442;&#x430;&#x43B;&#x43E;&#x432;</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/khabaroff/showmethetitle.ru",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/khabaroff",
+          "text": "khabaroff"
+        }
+      ]
+    }
+  ]
+}
