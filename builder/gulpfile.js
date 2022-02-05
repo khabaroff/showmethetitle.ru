@@ -3,7 +3,7 @@
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
     rigger = require('gulp-rigger'),
-    minifycss = require('gulp-clean-css'),
+    cleanCSS = require('gulp-clean-css'),
     uglify = require('gulp-uglify'),
     htmlmin = require('gulp-htmlmin')
 ;
@@ -48,7 +48,7 @@ gulp.task('js:build', function () {
 gulp.task('css:build', function () {
     gulp.src(path.src.css) //Найдем наш main файл
         .pipe(rigger()) //Прогоним через rigger
-        .pipe(minifycss()) //Сожмем наш js
+        .pipe(cleanCSS()) //Сожмем наш js
         .pipe(gulp.dest(path.build.css)); //Выплюнем готовый файл в build
 
 });
