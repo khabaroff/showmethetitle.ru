@@ -3,7 +3,7 @@
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
     rigger = require('gulp-rigger'),
-    minifycss = require('gulp-minify-css'),
+    minifycss = require('gulp-clean-css'),
     uglify = require('gulp-uglify'),
     htmlmin = require('gulp-htmlmin')
 ;

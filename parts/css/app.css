@@ -63,8 +63,14 @@ body {
     height: 22px;
     font-size: 14px;
     line-height: 1em;
-    /*border: 1px solid red;*/
+    text-align: right;
+    /* border: 1px solid red; */
 }
+
+.footer a
+{  color: white;
+}
+
 
 #foot {
     display: block;
@@ -311,6 +317,3 @@ body {
 .mobile .site9 .refresh:hover > svg > path#svg {
     fill: white
 }
-
-
-

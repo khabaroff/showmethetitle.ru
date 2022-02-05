@@ -6,4 +6,6 @@
 
 <b>Супервайзинг</b><br/>Александр Баталов
 
-<b>История проекта</b><br/><a href="https://khabaroff.com/portfolio/showmethetitle-ru/">khabaroff.com/portfolio/showmethetitle-ru</a>
+<b>История проекта</b><br/><a href="https://khabaroff.com/portfolio/showmethetitle-ru/">khabaroff.com/portfolio/showmethetitle-ru</a><br/><br/>
+
+Node 10 + Gulp 3.9
