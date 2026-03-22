@@ -1,1 +1,200 @@
-:root {}
+@font-face {
+  font-family: "Vremena";
+  src:
+    url("../parts/css/VremenaGroteskMedium.woff") format("woff"),
+    url("../parts/css/VremenaGroteskMedium.ttf") format("truetype"),
+    url("../parts/css/VremenaGroteskMedium.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  --page-bg: #ebe9da;
+  --page-fg: #141414;
+  --link-active: #aaaaaa;
+  --title-scale: 1;
+  --title-size: clamp(2.75rem, 7vw, 6.25rem);
+  --title-line-height: 1.15;
+  --title-letter-spacing: 0.01em;
+  --content-padding-top: clamp(1rem, 3vw, 3.5625rem);
+  --content-padding-right: clamp(4rem, 9vw, 8.75rem);
+  --content-padding-bottom: clamp(4.5rem, 7vw, 6.25rem);
+  --content-padding-left: clamp(1rem, 3vw, 2.8125rem);
+  --refresh-size: clamp(2rem, 4vw, 3.8125rem);
+  --footer-size: clamp(0.8125rem, 1.2vw, 0.875rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--page-bg);
+  color: var(--page-fg);
+  font-family: "Vremena", Georgia, "Times New Roman", serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+body.site1 {
+  --page-bg: #5a68b8;
+  --page-fg: #ffffff;
+  --link-active: #000000;
+}
+
+body.site2 {
+  --page-bg: #00889a;
+  --page-fg: #ffffff;
+  --link-active: #000000;
+}
+
+body.site3 {
+  --page-bg: #1e3fbe;
+  --page-fg: #ffffff;
+  --link-active: #000000;
+}
+
+body.site4 {
+  --page-bg: #d01e1c;
+  --page-fg: #ffffff;
+  --link-active: #000000;
+}
+
+body.site5 {
+  --page-bg: #ffffff;
+  --page-fg: #2222cc;
+  --link-active: #dddd33;
+}
+
+body.site6 {
+  --page-bg: #2785fc;
+  --page-fg: #ffffff;
+  --link-active: #000000;
+}
+
+body.site7 {
+  --page-bg: #ebe9da;
+  --page-fg: #141414;
+  --link-active: #aaaaaa;
+}
+
+body.site8 {
+  --page-bg: #dfab4d;
+  --page-fg: #ffffff;
+  --link-active: #000000;
+}
+
+body.site9 {
+  --page-bg: #c9471a;
+  --page-fg: #ffffff;
+  --link-active: #000000;
+}
+
+a {
+  color: inherit;
+}
+
+a:active {
+  color: var(--link-active);
+}
+
+#content {
+  min-height: 100dvh;
+  padding:
+    var(--content-padding-top)
+    var(--content-padding-right)
+    var(--content-padding-bottom)
+    var(--content-padding-left);
+  overflow: hidden;
+}
+
+#txt {
+  margin: 0;
+  max-width: 100%;
+  font-size: calc(var(--title-size) * var(--title-scale));
+  line-height: var(--title-line-height);
+  letter-spacing: var(--title-letter-spacing);
+  hyphens: auto;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+.refresh {
+  position: fixed;
+  top: clamp(1rem, 2vw, 1.5625rem);
+  right: clamp(1rem, 3vw, 2.5rem);
+  width: var(--refresh-size);
+  height: calc(var(--refresh-size) * 1.23);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  transform: rotate(var(--refresh-rotation, 0deg));
+  transform-origin: 50% 60%;
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+  user-select: none;
+}
+
+.refresh:hover {
+  opacity: 0.85;
+}
+
+.refresh svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.refresh #svg {
+  fill: currentColor;
+  transition: fill 0.1s ease;
+}
+
+.footer {
+  position: fixed;
+  right: clamp(1rem, 3vw, 2.5rem);
+  bottom: clamp(1rem, 3vw, 2.5rem);
+  max-width: calc(100vw - 2rem);
+  font-size: var(--footer-size);
+  line-height: 1;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --content-padding-top: 1rem;
+    --content-padding-right: 4rem;
+    --content-padding-bottom: 5rem;
+    --content-padding-left: 1rem;
+    --title-size: clamp(2.5rem, 10vw, 4.25rem);
+    --refresh-size: 1.9rem;
+    --footer-size: 0.8rem;
+  }
+
+  .footer {
+    max-width: calc(100vw - 2rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --title-size: clamp(3.5rem, 7vw, 6.25rem);
+  }
+}
