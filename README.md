@@ -1,11 +1,39 @@
-showmethetitle.gif
+# showmethetitle.ru
 
-<b>Идея и дизайн</b><br/>Василий Подтынников
+![showmethetitle](showmethetitle.gif)
 
-<b>Верстка и программирование</b><br/>Сергей Хабаров
+Статический генератор заголовков.
 
-<b>Супервайзинг</b><br/>Александр Баталов
+Обновление 2026:
+- Vite вместо legacy Gulp-сборки
+- vanilla JS без jQuery и Google Analytics
+- тексты в [`src/data/titles.json`](src/data/titles.json)
+- адаптивная типографика с `clamp()` и дополнительным fit-проходом
 
-<b>История проекта</b><br/><a href="https://khabaroff.com/showmethetitle-ru/">khabaroff.com/showmethetitle-ru</a><br/><br/>
+Продакшен URL: <https://khabaroff.com/showmethetitle.ru/>
 
-Обновлено: март 2026
+История проекта: <https://khabaroff.com/showmethetitle-ru/>
+
+## Разработка
+
+```bash
+npm install
+npm run dev
+```
+
+## Сборка
+
+```bash
+npm test
+npm run build
+```
+
+Готовая статика собирается в `dist/`.
+
+## Авторы
+
+Идея и дизайн: Василий Подтынников
+
+Верстка и программирование: Сергей Хабаров
+
+Супервайзинг: Александр Баталов

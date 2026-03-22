@@ -1,9 +1,9 @@
 @font-face {
   font-family: "Vremena";
   src:
-    url("../parts/css/VremenaGroteskMedium.woff") format("woff"),
-    url("../parts/css/VremenaGroteskMedium.ttf") format("truetype"),
-    url("../parts/css/VremenaGroteskMedium.otf") format("opentype");
+    url("./assets/fonts/VremenaGroteskMedium.woff") format("woff"),
+    url("./assets/fonts/VremenaGroteskMedium.ttf") format("truetype"),
+    url("./assets/fonts/VremenaGroteskMedium.otf") format("opentype");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
